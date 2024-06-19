@@ -1,0 +1,97 @@
+@use './../../app.component.scss' as variables;
+
+.job-ad {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    h2 {
+      font-size: 24px;
+      margin: 8px;
+      color: #333;
+      font-weight: 600;
+      text-transform: capitalize;
+      letter-spacing: 0.5px;
+    }
+
+    div {
+      margin: 8px 4px;
+      font-size: 10px;
+      font-weight: 400;
+      text-transform: uppercase;
+      background-color: variables.$secondary-600;
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    li {
+      background-color: variables.$primary-color;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 20px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: lowercase;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+
+  }
+  .delete-button {
+    background-color: variables.$gray-color;
+    color: #fff;
+
+      &:hover {
+        background-color: variables.$gray-600;
+      }
+  }
+  .edit-button {
+    background-color: variables.$secondary-color;
+    color: #fff;
+
+      &:hover {
+        background-color: variables.$secondary-600;
+      }
+  }
+}

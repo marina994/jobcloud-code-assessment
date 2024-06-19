@@ -1,0 +1,39 @@
+@use './../../app.component.scss' as variables;
+
+.navbar {
+  background-color: variables.$primary-color;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  h1 {
+   font-weight: 400;
+  }
+}
+
+.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  li {
+    margin-right: 10px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: variables.$primary-600;
+      }
+    }
+  }
+}
+
+

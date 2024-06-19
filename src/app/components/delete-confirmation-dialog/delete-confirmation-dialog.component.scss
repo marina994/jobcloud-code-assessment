@@ -1,0 +1,38 @@
+@use './../../app.component.scss' as variables;
+
+.delete-dialog-wrapper {
+  margin: 20px;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+  }
+
+  button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  .cancel-button {
+    background-color: variables.$gray-color;
+
+    &:hover {
+      background-color: variables.$gray-600;
+    }
+  }
+  .delete-button {
+    background-color: variables.$warning-color;
+
+      &:hover {
+        background-color: variables.$warning-600;
+      }
+  }
+
+}

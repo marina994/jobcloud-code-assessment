@@ -1,0 +1,15 @@
+<div *ngIf="vm$ |async as vm">
+  <div class="job-ad" *ngFor="let jobAd of vm.jobAds">
+    <div class="title">
+      <h2>{{ jobAd.title }}</h2>
+      <div>{{ jobAd.status }}</div>
+    </div>
+    <p>{{ jobAd.description }}</p>
+    <ul>
+      <li *ngFor="let skill of jobAd.skills">{{ skill }}</li>
+    </ul>
+    
+    <button (click)="editJobAd(jobAd)" class="edit-button">Edit</button>
+    <button class="delete-button" (click)="deleteJobAd(jobAd.id)">Delete</button>
+  </div>
+</div>

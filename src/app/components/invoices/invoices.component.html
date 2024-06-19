@@ -1,0 +1,22 @@
+
+<div class="invoice-list" *ngIf="vm$ |async as vm">
+  <h2>Invoice List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Invoice ID</th>
+        <th>Job Ad ID</th>
+        <th>Amount</th>
+        <th>Due Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let invoice of vm.invoices">
+        <td>{{ invoice.id }}</td>
+        <td>{{ invoice.jobAdId }}</td>
+        <td>{{ invoice.amount }}</td>
+        <td>{{ invoice.dueDate | date }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

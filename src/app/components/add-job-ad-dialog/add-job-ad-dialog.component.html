@@ -1,0 +1,47 @@
+<div class="dialog-wrapper">
+  <h1>Add Job Ad</h1>
+  <form [formGroup]="addJobAdForm" (ngSubmit)="onSave()" class="job-ad">
+    <div class="form-content">
+      <div class="form-field">
+        <label for="title">Title</label>
+        <input id="title" formControlName="title" placeholder="Enter title">
+        <span *ngIf="addJobAdForm.controls['title'].errors?.['required'] && addJobAdForm.controls['title'].touched" class="error-message">
+          Title is required
+        </span>
+      </div>
+      <div class="form-field">
+        <label for="description">Description</label>
+        <textarea id="description" formControlName="description" placeholder="Enter description"></textarea>
+        <span *ngIf="addJobAdForm.controls['description'].errors?.['required'] && addJobAdForm.controls['description'].touched" class="error-message">
+          Description is required
+        </span>
+      </div>
+      <div class="form-field add-skill-field">
+        <label for="newSkill">Add Skill</label>
+        <input id="newSkill" [formControl]="newSkillControl" placeholder="Enter skill">
+        <button type="button" (click)="addSkill()" class="add-skill-button">Add Skill</button>
+      </div>
+      <div class="skills">
+        <ul>
+          <li *ngFor="let skill of skills.controls; let i = index" class="skill-item">
+            {{ skill.value }}
+            <mat-icon (click)="removeSkill(i)" class="remove-skill-button">cancel</mat-icon>
+          </li>
+        </ul>
+        <span *ngIf="skills.errors?.['required'] && (skills.touched || addJobAdForm.touched)" class="error-message">
+          At least one skill is required
+        </span>
+      </div>
+      <div class="form-field">
+        <label for="status">Status</label>
+        <select id="status" formControlName="status">
+          <option value="draft">Draft</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-actions">
+      <button type="button" (click)="onCancel()" class="cancel-button">Cancel</button>
+      <button type="submit" class="save-button">Save</button>
+    </div>
+  </form>
+</div>

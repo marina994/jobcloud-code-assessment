@@ -1,0 +1,10 @@
+<div class="content-wrapper">
+  <div class="controls">
+    <form [formGroup]="filterForm" class="filter-form">
+      <input formControlName="searchTerm" placeholder="Filter job ads" />
+    </form>
+
+    <button (click)="addJobAd()">Add Job Ad</button>
+  </div>
+  <app-job-ad-list></app-job-ad-list>
+</div>

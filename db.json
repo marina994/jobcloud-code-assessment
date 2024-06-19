@@ -1,0 +1,110 @@
+{
+  "jobs": [
+    {
+      "title": "Wizard",
+      "description": "Conjures spells and potions",
+      "skills": [
+        "magic",
+        "alchemy",
+        "wizardry",
+        "magic wand"
+      ],
+      "status": "draft",
+      "id": "1",
+      "updatedAt": "2024-06-19T06:58:13.953Z"
+    },
+    {
+      "id": "2",
+      "title": "Juggler",
+      "description": "Master of juggling balls and chainsaws",
+      "skills": [
+        "juggling",
+        "entertainment",
+        "coordination"
+      ],
+      "status": "draft",
+      "createdAt": "2024-03-22T10:15:00Z",
+      "updatedAt": "2024-03-22T10:15:00Z"
+    },
+    {
+      "id": "3",
+      "title": "Chocolate Taster",
+      "description": "Indulges in the finest chocolates",
+      "skills": [
+        "tasting",
+        "chocolate",
+        "discernment"
+      ],
+      "status": "draft",
+      "createdAt": "2024-03-24T14:00:00Z",
+      "updatedAt": "2024-03-24T14:00:00Z"
+    },
+    {
+      "id": "4",
+      "title": "Nap Consultant",
+      "description": "Expert in optimizing nap schedules",
+      "skills": [
+        "napping",
+        "consulting",
+        "rest"
+      ],
+      "status": "draft",
+      "createdAt": "2024-03-25T08:45:00Z",
+      "updatedAt": "2024-03-25T08:45:00Z"
+    },
+    {
+      "title": "Banana Peel Slip Tester",
+      "description": "Tests the slipperiness of banana peels",
+      "skills": [
+        "testing",
+        "banana",
+        "balance"
+      ],
+      "status": "published",
+      "id": "5",
+      "updatedAt": "2024-06-18T06:47:13.385Z"
+    },
+    {
+      "title": "Cat Petter",
+      "description": "Petting and cuddling cats when they want to.",
+      "skills": [
+        "patience"
+      ],
+      "status": "archived",
+      "id": "2e46",
+      "updatedAt": "2024-06-19T06:58:36.205Z"
+    },
+    {
+      "title": "Time Waster",
+      "description": "Doing nothing and everything you like.",
+      "skills": [
+        "Zelda",
+        "books",
+        "coffee dates",
+        "gym",
+        "Disney+"
+      ],
+      "status": "published",
+      "id": "18ff",
+      "updatedAt": "2024-06-18T00:43:12.666Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "5c86",
+      "jobAdId": "2e46",
+      "amount": 90,
+      "dueDate": "2024-09-16T00:50:55.867Z",
+      "createdAt": "2024-06-18T00:50:55.867Z",
+      "updatedAt": "2024-06-18T00:50:55.867Z"
+    },
+    {
+      "id": "692f",
+      "jobAdId": "5",
+      "amount": 90,
+      "dueDate": "2024-09-16T06:47:13.303Z",
+      "createdAt": "2024-06-18T06:47:13.304Z",
+      "updatedAt": "2024-06-18T06:47:13.304Z"
+    }
+  ]
+}
